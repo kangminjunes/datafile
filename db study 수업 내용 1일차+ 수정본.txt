@@ -1,0 +1,109 @@
+db study 수업 내용 1일차 
+
+git bash here -> 우클릭으로 폴더 열고 해당 기능 클릭 
+
+$ -> git init  
+
+입력
+
+브렌치를 설정해야 작업이 가능 아예 없이 브렌치가 없다면 사용 불가능
+
+->변화 체크 확인 보기-> 숨겨진 항목 활성화
+
+리눅스 , 윈도우 구분하는법
+
+git 시작 윈도우
+다른 나머지 시작 -> 리눅스 언어이다
+
+리눅스 마침으로 시작하는 명령어는 숨김처리 되있는 명령이다.
+window 파일, 폴더 구분하는법 -> 확장자 여부로 .exe .html
+
+리눅스는 구분이 불가능하다. 확장자가 아예 없기에 판단이 안된다.
+
+전체 상태 확인하는거 git status
+파일 추가하는거  git add (파일 이름) 입력시 관심대상으로 추가가능
+
+x, y 영어와 글자를 입력하고 저장후
+
+git status 입력시 -> x,y 내용이 변한것을 메시지로 출력해준다.
+
+깃 관리 이메일 설정
+
+git config user.email 1999koco@naver.com
+
+
+git config user.email 입력시 등록된 이메일 확인 가능함
+
+git config user. name kangminjunes 아이디 입력 하는것
+
+git commit 통하여 메모장을 열수있음
+
+기본 숫자 입력시 입력이 안되지만 a누르면 글자 삽입 가능
+메모장을 종료 하고싶을떄 esc-> : -> w ->q 입력시 메모장 종료
+
+git commit -m 'my second commit' 입력시 메시지 남길수있다 
+들어가지않고
+
+git log -> 커밋 기록 확인  날짜 , 누가, 내용  나온다
+
+commit id 입력으로 그 시점으로 돌아갈수있다.
+
+git log --oneline 입력시 한줄로 요약에서 간단하게 확인 가능
+
+exit 종료후 삭제후 다시 실행하면 메인 브랸치가 사라진걸 통해
+초기화 된걸 확인 가능하다.
+
+touch  파일명.txt  -> 명령어를 통해 텍스트 파일 생성가능
+
+echo '입력 단어' >> 파일명.txt -> 통해서 직접 파일에 텍스트 삽입
+
+git rm --cached 파일명 .txt -> 해당 집중 마크를 해제 한다는것
+입력후 git status 입력시 해당파일이 사라진걸 확인이 가능하다.
+
+git add . 전체 폴더에있는 텍스트가 추가되는걸확인 가능
+
+cat  파일이름.txt 입력시 해당 텍스트 파일에 입력되어있는 내용출력
+
+여러개의 커밋을 입력시 최근 커밋은 HEAD라고 추가로 표시 된다
+
+git reset -- hard (돌아가고 싶은 커밋) 입력시 그전에 입력한 커밋은 사라지고
+이전 기록으로 돌아가는걸 확인이 가능하다.
+
+
+git hub 토큰
+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 
+
+db study 로컬 레파지토리 - 원격 레파지토리 등록 하는법
+git remote add origin https://github.com/kangminjunes/dbstudy.git
+
+리눅스 복사 : Ctrl + Insert
+리눅스 붙이기:Shift + Insert
+
+로컬 -> 원격으로 올리기
+git push origin main
+
+git 전역 이메일로 설정 하는법
+
+git config -- global user.email 1999koco@naver.com
+
+git config -- global user.name kangminjunes
+
+변경사항 지정 git add.
+메시지저장하는거  입력 git commit -m '기록 메시지 입력 자유'
+깃에 등록하는법 git push origin main
+
+  
+git 자체에서 수정시  git pull main 최신정보로 다운받고
+그이후 수정하여 다시 git push origin main으로 다시 업로드
+
+
+새로운 환경에서 원격지를 유지하고있으면 
+git clone https://github.com/kangminjunes/dbstudy.git 통하여 구현 가능
+
+폴더 이동 추가 하기 위하여 
+cd 이동할 폴더 이름 입력
+
+ls     폴더 파일 이름 출력
+ls -a  숨겨진 폴더 포함 전체 출력
+ls -al  한줄에 한개의 폴더 내용을 자세히출력
+ll     한줄에 한개의 보이는 폴더 내용 출력
